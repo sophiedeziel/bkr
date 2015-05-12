@@ -1,5 +1,7 @@
 # Bkr
 
+[![Join the chat at https://gitter.im/sophiedeziel/bkr](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sophiedeziel/bkr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://travis-ci.org/sophiedeziel/bkr.svg)](https://travis-ci.org/sophiedeziel/bkr)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bkr`. To experiment with that code, run `bin/console` for an interactive prompt.
