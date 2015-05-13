@@ -1,5 +1,6 @@
 # Bkr
 
+[![Gem Version](https://badge.fury.io/rb/bkr.svg)](http://badge.fury.io/rb/bkr)
 [![Build Status](https://travis-ci.org/sophiedeziel/bkr.svg)](https://travis-ci.org/sophiedeziel/bkr)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bkr`. To experiment with that code, run `bin/console` for an interactive prompt.
