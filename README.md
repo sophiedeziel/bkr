@@ -10,23 +10,21 @@ TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'bkr'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install the gem:
 
     $ gem install bkr
 
 ## Usage
 
-TODO: Write usage instructions here
+bkr offers a CLI to automate some tasks of your projet. 
+
+### Start a new book project
+
+In your terminal, move to the folder you want to create your book project in and run:
+
+    $ book new my_book_name
+
+This will create a directory with some auto generated files and directories (this is not implemented yet, sorry).
 
 ## Development
 
