@@ -1,25 +1,16 @@
 require 'thor'
 
 module Bkr
-  class HammerOfTheGods < Thor
+  class Cli < Thor
     desc "new NAME", "This will create a new book project"
-    long_desc <<-HELLO_WORLD
+    long_desc <<-NEW_NAME
 
-    `hello NAME` will print out a message to the person of your choosing.
+    `new NAME` will create a new book project.
 
-    Brian Kernighan actually wrote the first "Hello, World!" program 
-    as part of the documentation for the BCPL programming language 
-    developed by Martin Richards. BCPL was used while C was being 
-    developed at Bell Labs a few years before the publication of 
-    Kernighan and Ritchie's C book in 1972.
-
-    http://stackoverflow.com/a/12785204
-    HELLO_WORLD
+    NEW_NAME
     #option :upcase
     def new( name )
-      greeting = "Hello, #{name}"
-      #greeting.upcase! if options[:upcase]
-      puts greeting
+      Bkr::Generators::BookBase.start(name: name)
     end
   end
 end

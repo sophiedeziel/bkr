@@ -2,4 +2,4 @@
 
 require 'bkr'
 
-Bkr::HammerOfTheGods.start( ARGV )
+Bkr::Cli.start( ARGV )
