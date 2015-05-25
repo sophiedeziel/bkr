@@ -1,16 +1,7 @@
-require 'thor'
+require 'bkr/generators/book_base'
 
 module Bkr
   class Cli < Thor
-    desc "new NAME", "This will create a new book project"
-    long_desc <<-NEW_NAME
-
-    `new NAME` will create a new book project.
-
-    NEW_NAME
-    #option :upcase
-    def new( name )
-      Bkr::Generators::BookBase.start(name: name)
-    end
+    register(Bkr::Generators::BookBase, "new", "name", "creates a new book project")
   end
 end
