@@ -16,7 +16,7 @@ Install the gem:
 
 ## Usage
 
-bkr offers a CLI to automate some tasks of your projet. 
+bkr offers a CLI to automate some tasks of your project.
 
 ### Start a new book project
 
