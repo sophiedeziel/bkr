@@ -1,4 +1,4 @@
-
+require 'bkr/generators'
 
 module Bkr
   class Cli < Thor
