@@ -1,4 +1,4 @@
-require 'bkr/generators/book_base'
+
 
 module Bkr
   class Cli < Thor

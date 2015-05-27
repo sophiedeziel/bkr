@@ -1,8 +1,4 @@
-require 'bkr/generators'
-require 'thor/parser/options'
-require 'thor/actions'
-require 'thor/group'
-
+require 'bkr/generators/book_base'
 
 module Bkr
   module Generators
