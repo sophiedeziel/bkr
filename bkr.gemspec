@@ -22,5 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.2"
 
   spec.add_dependency 'thor', "~> 0.19"
-  # spec.add_dependency 'epub_validator', "~> 1.1"
+  spec.add_dependency 'epub_validator', "~> 1.1"
 end
