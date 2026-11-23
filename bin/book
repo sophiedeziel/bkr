@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
-require 'bkr'
+require "bkr"
 
-Bkr::Cli.start( ARGV )
+Bkr::Cli.start(ARGV)

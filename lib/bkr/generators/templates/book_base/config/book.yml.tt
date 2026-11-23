@@ -1,0 +1,26 @@
+# Book settings for bkr. Edit freely, then run `book build`.
+
+title: <%= yaml_string(book_title) %>
+author: <%= yaml_string(book_author) %>   # or a list: ["Jane Doe", "John Roe"]
+language: en                    # BCP 47 language tag (en, fr, fr-CA, ...)
+identifier: "<%= book_identifier %>"   # keep it unique and stable for this book
+date: <%= book_date %>
+
+# Optional settings (uncomment to use):
+# publisher: "My Publishing House"
+# description: "A short summary of the book."
+# cover: images/cover.png       # relative to assets/
+# filename: my_book             # build/<filename>.epub (defaults to the folder name)
+# bkr_assets: true              # include bkr's bundled bkr.css and bkr.js (interactive widgets)
+# stylesheets:                  # relative to assets/ (default: every assets/css/*.css)
+#   - css/book.css
+# scripts:                      # relative to assets/ (default: every assets/js/*.js)
+#   - js/book.js
+
+# Reading order. Files are relative to content/. The title defaults to the
+# chapter's first <h1> when omitted. You can also write just the file name.
+chapters:
+  - file: 01_introduction.html
+    title: Introduction
+  - file: 02_interactive.html
+    title: Interactive Pages
