@@ -1,0 +1,122 @@
+{
+  "messages" : [ {
+    "ID" : "PKG-008",
+    "severity" : "FATAL",
+    "message" : "Unable to read file \"EPUB/missing.xhtml\".",
+    "additionalLocations" : 0,
+    "locations" : [ {
+      "url" : { },
+      "path" : "EPUB/package.opf",
+      "line" : -1,
+      "column" : -1,
+      "context" : null
+    } ],
+    "suggestion" : null
+  }, {
+    "ID" : "RSC-005",
+    "severity" : "ERROR",
+    "message" : "Error while parsing file: element \"p\" not allowed here.",
+    "additionalLocations" : 0,
+    "locations" : [ {
+      "url" : { },
+      "path" : "EPUB/text/ch1.xhtml",
+      "line" : 12,
+      "column" : 4,
+      "context" : null
+    }, {
+      "url" : { },
+      "path" : "EPUB/text/ch2.xhtml",
+      "line" : 3,
+      "column" : 10,
+      "context" : null
+    } ],
+    "suggestion" : null
+  }, {
+    "ID" : "RSC-007",
+    "severity" : "ERROR",
+    "message" : "Referenced resource \"images/cover.png\" could not be found in the EPUB.",
+    "additionalLocations" : 12,
+    "locations" : [ {
+      "url" : { },
+      "path" : "EPUB/nav.xhtml",
+      "line" : 8,
+      "column" : -1,
+      "context" : "images/cover.png"
+    } ],
+    "suggestion" : null
+  }, {
+    "ID" : "OPF-053",
+    "severity" : "WARNING",
+    "message" : "Date value \"2026-13-01\" does not follow recommended syntax as per http://www.w3.org/TR/NOTE-datetime.",
+    "additionalLocations" : 0,
+    "locations" : [ {
+      "url" : { },
+      "path" : "EPUB/package.opf",
+      "line" : 7,
+      "column" : 32,
+      "context" : null
+    } ],
+    "suggestion" : null
+  }, {
+    "ID" : "HTM-010",
+    "severity" : "USAGE",
+    "message" : "Namespace uri \"http://www.idpf.org/2007/ops\" was found.",
+    "additionalLocations" : 0,
+    "locations" : [ {
+      "url" : { },
+      "path" : "EPUB/text/ch1.xhtml",
+      "line" : 2,
+      "column" : 50,
+      "context" : null
+    } ],
+    "suggestion" : null
+  }, {
+    "ID" : "INF-001",
+    "severity" : "INFO",
+    "message" : "EPUB 3 publication detected.",
+    "additionalLocations" : 0,
+    "locations" : [ ],
+    "suggestion" : null
+  } ],
+  "customMessageFileName" : null,
+  "checker" : {
+    "path" : "/tmp/my_book.epub",
+    "filename" : "my_book.epub",
+    "checkerVersion" : "5.3.0",
+    "checkDate" : "22-11-2026 10:00:00",
+    "elapsedTime" : 412,
+    "nFatal" : 1,
+    "nError" : 2,
+    "nWarning" : 1,
+    "nUsage" : 1
+  },
+  "publication" : {
+    "publisher" : null,
+    "title" : "My Book",
+    "creator" : [ "Jane Doe" ],
+    "date" : null,
+    "subject" : [ ],
+    "description" : null,
+    "rights" : null,
+    "identifier" : "urn:uuid:0b6f4d2e-6b1e-4a2a-9f0e-2c7f6f3f1e11",
+    "language" : "en",
+    "nSpines" : 2,
+    "checkSum" : 0,
+    "renditionLayout" : "reflowable",
+    "renditionOrientation" : "auto",
+    "renditionSpread" : "auto",
+    "ePubVersion" : "3.3",
+    "isScripted" : false,
+    "hasFixedFormat" : false,
+    "isBackwardCompatible" : false,
+    "hasAudio" : false,
+    "hasVideo" : false,
+    "charsCount" : 1024,
+    "embeddedFonts" : [ ],
+    "refFonts" : [ ],
+    "hasEncryption" : false,
+    "hasSignatures" : false,
+    "contributors" : [ ]
+  },
+  "items" : [ ]
+}

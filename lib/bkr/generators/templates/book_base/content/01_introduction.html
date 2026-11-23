@@ -1,0 +1,36 @@
+<h1>Introduction</h1>
+
+<p>Welcome to your new book! This chapter is a plain HTML file in the
+<code>content/</code> folder. Replace it with your own words.</p>
+
+<section>
+  <h2>How chapters work</h2>
+
+  <p>A chapter is a fragment of XHTML: just the content, without
+  <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code>.
+  bkr wraps it in a complete page and adds your stylesheets and scripts when
+  you run <code>book build</code>.</p>
+
+  <p>XHTML is a little stricter than everyday HTML:</p>
+
+  <ul>
+    <li>close every tag, including <code>&lt;p&gt;</code> and <code>&lt;li&gt;</code>;</li>
+    <li>close empty elements too: <code>&lt;br/&gt;</code>, <code>&lt;img src="..." alt="..."/&gt;</code>;</li>
+    <li>write ampersands as <code>&amp;amp;</code>, as in &#8220;Salt &amp; Pepper&#8221;.</li>
+  </ul>
+
+  <p>The first <code>&lt;h1&gt;</code> is the chapter title unless
+  <code>config/book.yml</code> gives one.</p>
+</section>
+
+<section>
+  <h2>Adding chapters</h2>
+
+  <p>Create a new file in <code>content/</code>, for example
+  <code>03_next_steps.html</code>, then list it under <code>chapters:</code>
+  in <code>config/book.yml</code> so it shows up in the right place.</p>
+
+  <blockquote>
+    <p>Start writing, and let the book find its shape along the way.</p>
+  </blockquote>
+</section>

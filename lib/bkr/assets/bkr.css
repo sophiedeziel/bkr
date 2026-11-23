@@ -1,0 +1,195 @@
+/*
+ * bkr.css - default typography and widget styles for books made with bkr.
+ *
+ * Loaded before the author's own stylesheets, so anything in assets/css/
+ * overrides it. Kept deliberately modest: reading systems apply their own
+ * fonts, sizes, margins and night modes, so this file uses relative units,
+ * inherits colours where it can and never loads anything from the network.
+ */
+
+/* Typography ---------------------------------------------------------------- */
+
+body {
+  line-height: 1.5;
+  widows: 2;
+  orphans: 2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25;
+  font-weight: bold;
+  page-break-after: avoid;
+  break-after: avoid;
+  -webkit-hyphens: none;
+  hyphens: none;
+}
+
+h1 { font-size: 1.8em; margin: 1em 0 0.75em; }
+h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; }
+h3 { font-size: 1.15em; margin: 1.25em 0 0.5em; }
+h4, h5, h6 { font-size: 1em; margin: 1em 0 0.5em; }
+
+p {
+  margin: 0 0 0.9em;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid currentColor;
+  opacity: 0.3;
+  margin: 2em 15%;
+}
+
+/* Images and figures ------------------------------------------------------- */
+
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 1.5em 0;
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+figcaption {
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
+/* Quotes and code ---------------------------------------------------------- */
+
+blockquote {
+  margin: 1.25em 1.5em;
+  padding-left: 1em;
+  border-left: 3px solid currentColor;
+  border-left-color: rgba(128, 128, 128, 0.5);
+}
+
+code, kbd, samp, pre {
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 0.75em;
+  margin: 1em 0;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 4px;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  padding: 0.3em 0.6em;
+  text-align: left;
+}
+
+/* Widgets (see bkr.js for the markup) -------------------------------------- */
+
+[data-bkr] [hidden],
+[data-bkr][hidden] {
+  display: none;
+}
+
+[data-bkr="reveal"],
+[data-bkr="quiz"] {
+  margin: 1.25em 0;
+  padding: 0.75em 1em;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 6px;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+[data-bkr="reveal"] > :last-child,
+[data-bkr="quiz"] > :last-child {
+  margin-bottom: 0;
+}
+
+.bkr-reveal-button,
+.bkr-steps-button,
+.bkr-quiz-option {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  padding: 0.3em 0.9em;
+  margin: 0.25em 0 0.75em;
+  cursor: pointer;
+}
+
+.bkr-reveal-button:focus,
+.bkr-steps-button:focus,
+.bkr-quiz-option:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* Quiz: once enhanced, options become full-width buttons. */
+.bkr-js [data-bkr="quiz"] ol,
+.bkr-js [data-bkr="quiz"] ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0;
+}
+
+.bkr-quiz-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 0.4em 0;
+}
+
+.bkr-quiz-option:disabled {
+  cursor: default;
+}
+
+.bkr-quiz-right .bkr-quiz-option {
+  border-width: 2px;
+  border-color: #2e7d32;
+}
+
+.bkr-quiz-right .bkr-quiz-option:after {
+  content: " \2713"; /* check mark */
+}
+
+.bkr-quiz-wrong .bkr-quiz-option {
+  border-style: dashed;
+  opacity: 0.6;
+}
+
+.bkr-quiz-wrong .bkr-quiz-option:after {
+  content: " \2717"; /* cross */
+}
+
+.bkr-quiz-feedback {
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+.bkr-quiz-feedback:empty {
+  display: none;
+}
+
+/* Steps */
+[data-bkr="steps"] > li {
+  margin-bottom: 0.4em;
+}

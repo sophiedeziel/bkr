@@ -1,0 +1,44 @@
+<h1>Interactive Pages</h1>
+
+<p>bkr comes with a few small widgets. They work in reading systems that
+support scripting, and they fall back to plain, readable text everywhere else.
+Each one is ordinary markup with a <code>data-bkr</code> attribute.</p>
+
+<section>
+  <h2>Reveal an answer</h2>
+
+  <div data-bkr="reveal" data-bkr-label="Show the answer" data-bkr-hide-label="Hide the answer">
+    <p>What has keys but can&#8217;t open a single door?</p>
+    <div data-bkr-hidden="">
+      <p>A piano.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>A quick quiz</h2>
+
+  <div data-bkr="quiz">
+    <p>Which file holds the title and the order of the chapters?</p>
+    <ol>
+      <li><code>content/01_introduction.html</code></li>
+      <li data-bkr-correct=""><code>config/book.yml</code></li>
+      <li><code>assets/css/book.css</code></li>
+    </ol>
+    <p data-bkr-explanation="">Right: <code>config/book.yml</code> describes the
+    book, and <code>content/</code> holds the chapters themselves.</p>
+  </div>
+</section>
+
+<section>
+  <h2>One step at a time</h2>
+
+  <p>How to make a book with bkr:</p>
+
+  <ol data-bkr="steps" data-bkr-label="Next step">
+    <li>Write your chapters in <code>content/</code>.</li>
+    <li>Fill in <code>config/book.yml</code>.</li>
+    <li>Run <code>book build</code>.</li>
+    <li>Open <code>build/</code> and enjoy your EPUB!</li>
+  </ol>
+</section>

@@ -1,0 +1,23 @@
+{
+  "messages" : [ ],
+  "customMessageFileName" : null,
+  "checker" : {
+    "path" : "/tmp/my_book.epub",
+    "filename" : "my_book.epub",
+    "checkerVersion" : "5.3.0",
+    "checkDate" : "22-11-2026 10:00:00",
+    "elapsedTime" : 305,
+    "nFatal" : 0,
+    "nError" : 0,
+    "nWarning" : 0,
+    "nUsage" : 0
+  },
+  "publication" : {
+    "title" : "My Book",
+    "creator" : [ "Jane Doe" ],
+    "identifier" : "urn:uuid:0b6f4d2e-6b1e-4a2a-9f0e-2c7f6f3f1e11",
+    "language" : "en",
+    "ePubVersion" : "3.3"
+  },
+  "items" : [ ]
+}

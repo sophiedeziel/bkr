@@ -1,0 +1,15 @@
+title: "The Sample Book"
+author:
+  - "Ada Lovelace"
+  - "Charles Babbage"
+language: en
+identifier: "urn:uuid:3f1c7a52-8d4e-4b6a-9c2f-5e0d1a7b9c44"
+publisher: "bkr Test Press"
+description: "A tiny book used by the bkr specs."
+date: 2026-11-22
+filename: sample_book
+cover: images/cover.png
+chapters:
+  - introduction.html
+  - file: chapter_one.html
+    title: "Chapter One"

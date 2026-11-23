@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
+set -vx
+
+bundle install
+
+if ! java -version >/dev/null 2>&1; then
+  echo "Note: Java is not installed. 'book validate' and the :java specs need Java 11+ (e.g. 'brew install openjdk')."
+fi

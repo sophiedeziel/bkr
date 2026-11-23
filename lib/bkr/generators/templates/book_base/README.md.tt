@@ -1,0 +1,27 @@
+# <%= book_title %>
+
+An interactive EPUB 3 book made with [bkr](https://github.com/sophiedeziel/bkr).
+
+## Writing
+
+- **Metadata and chapter order** live in `config/book.yml` (title, author, language, chapters, ...).
+- **Chapters** are HTML files in `content/`. Each one is a body fragment: no `<html>`, `<head>`
+  or `<body>`, just your content, starting with an `<h1>`. It must be well-formed XHTML: close
+  every tag, write `<br/>` and `<img ... />`, and escape `&` as `&amp;`.
+- **Styles** go in `assets/css/`, **scripts** in `assets/js/`, **images** in `assets/images/` and
+  **fonts** in `assets/fonts/`. Everything in `assets/` is packaged into the EPUB.
+- **Images in chapters**: reference them relative to the chapter file, e.g.
+  `<img src="../assets/images/photo.png" alt="..." />`. Links between chapters work too:
+  `<a href="02_interactive.html">`. bkr rewrites both to the right paths inside the EPUB.
+- bkr ships `bkr.css` and `bkr.js`, which give you nice typography and interactive widgets
+  (reveal boxes, quizzes, ...). See `content/02_interactive.html` for examples. Turn them off
+  with `bkr_assets: false` in `config/book.yml`.
+
+## Building
+
+```sh
+book build      # creates build/<name>.epub
+book validate   # checks the EPUB with the W3C EPUBCheck (needs Java)
+```
+
+Open the `.epub` in any EPUB 3 reader (Apple Books, Thorium, Calibre, ...).

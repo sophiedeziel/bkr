@@ -1,0 +1,18 @@
+/*
+ * Your book's own styles.
+ *
+ * bkr's bundled bkr.css (typography and widget styles) is loaded before this
+ * file, so anything you write here wins. Keep it simple: reading systems let
+ * readers change fonts, sizes and colours, so avoid fixed sizes and colours
+ * where you can.
+ */
+
+/* Example: a little more space before each chapter title. */
+h1 {
+  margin-top: 2em;
+}
+
+/* Example: a class for short notes, used as <p class="note">...</p> */
+.note {
+  font-style: italic;
+}
